@@ -1,0 +1,47 @@
+
+body {
+	background: lightblue;
+	font-family: Graphik;
+	font-size: 14pt;
+	margin: 20;
+
+}
+
+h1{
+	color: white;
+	font-size: 100pt;
+	padding-bottom: 20px;
+}
+h2{
+	color: grey;
+	font-size: 50pt;
+	padding-bottom: 20px;
+}
+
+h3{
+	color: white;
+	font-size: 20pt;
+}
+
+a{
+	color: hotpink;
+
+
+}
+
+p{
+	padding-bottom: 20px
+}
+
+label{
+	font-weight: normal;
+}
+
+button {
+	background-color: hotpink;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 24pt;
+
+}
