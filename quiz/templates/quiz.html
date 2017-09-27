@@ -15,5 +15,5 @@
 	<p>Ev någon mer text.</p>
 	<br>
 	
-	<button onclick="location.href='quiz/<int:quiz_number>/question/<int:question_number>/'" type="button">Starta quizet här</a>
+	<button onclick="location.href='{% url 'question_page' quiz_number 1 %}'" type="button">Starta quizet här</a>
 	
