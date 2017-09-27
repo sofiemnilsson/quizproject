@@ -3,20 +3,20 @@ from django.shortcuts import render
 quizzes = [
 	{
 		"quiz_number": 1,
-		"name": "Klassiska böcker",
-		"description": "Hur bra kan du dina klassiker?"
+		"name": "Rengöring",
+		"description": "Vad vet du om hudvårdens grundbult?"
 	},
 
 	{
 		"quiz_number": 2,
-		"name": "Största fotbollslagen",
-		"description": "Kan du dina lag?"
+		"name": "Exfoliering",
+		"description": "Korn, kemisk eller inte alls?"
 	},
 
 	{
 		"quiz_number": 3,
-		"name": "Världens mest kända hackare",
-		"description": "Kan du din hackerhistoria?"
+		"name": "Återfuktning",
+		"description": "Varför serum när det finns crème? Och andra stora frågor."
 
 	},
 ]
@@ -37,10 +37,11 @@ def quiz(request, quiz_number):
 def question(request, quiz_number, question_number):
 	context = {
 		"question_number": question_number,
-		"question": "Hur många bultar har ölandsbron?",
-		"answer1": "12",
-		"answer2": "66 400",
-		"answer3": "7 428 954",
+		"question": "Hur ofta bör du gå på ansiktsbehandling?",
+		"answer1": "1 gång om året",
+		"answer2": "1 gång i månaden",
+		"answer3": "1 gång i veckan",
+		"quiz": quizzes[quiz_number -1],
 		"quiz_number": quiz_number,
 
 	}

@@ -9,11 +9,11 @@
 	<link href = "/static/stylequiz.css" rel="stylesheet">
 </head>
 <body>
-	<h1>DET EPISKA HUDVÅRDSTESTET</h1>
-	<h2>Rengöring/Exfoliering/Återfuktning</h2>
-	<h3>{{ question_number }}. {{ question }}</h3>
+	<h1>{{ quiz.name }}</h1>
+	<h2>{{ question_number }}. {{ question }}</h2>
 	<form>
-		<input type="radio" name="q1" value="Alt 1" id="q1alt1"><label for="q1alt1"> {{ answer1 }} </label>
+		<input type="radio" name="q1" value="Alt 1" id="q1alt1">
+			<label for="q1alt1"> {{ answer1 }} </label>
 		<br>
 		<input type="radio" name="q1" value="Alt 2" id="q1alt2"><label for="q1alt2"> {{ answer2 }} </label>
 		<br>

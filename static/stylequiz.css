@@ -9,12 +9,13 @@ body {
 
 h1{
 	color: white;
-	font-size: 100pt;
+	font-size: 10vw;
 	padding-bottom: 20px;
+	text-transform: uppercase;
 }
 h2{
 	color: grey;
-	font-size: 50pt;
+	font-size: 5vw;
 	padding-bottom: 20px;
 }
 
@@ -30,11 +31,12 @@ a{
 }
 
 p{
-	padding-bottom: 20px
+	padding-bottom: 20px;
 }
 
 label{
 	font-weight: normal;
+	padding-left: 10px;
 }
 
 button {
@@ -44,4 +46,9 @@ button {
 	text-align: center;
 	font-size: 24pt;
 
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
