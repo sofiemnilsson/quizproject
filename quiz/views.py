@@ -11,3 +11,25 @@ def question(request, quiz_number, question_number):
 
 def completed(request, quiz_number):
 	return render(request, "completed.html")
+
+
+quizzes = [
+	{
+		"quiz_number": 1,
+		"name": "Klassiska böcker"
+		"description": "Hur bra kan du dina klassiker?"
+	},
+
+	{
+		"quiz_number": 2,
+		"name": "Störst fotbollslagen",
+		"description": "Kan du dina lag?"
+	},
+
+	{
+		"quiz_number": 3,
+		"name": "Världens mest kända hackare",
+		"description": "Kan du din hackerhistoria?"
+
+	},
+]
