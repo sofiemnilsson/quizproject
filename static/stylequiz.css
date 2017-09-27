@@ -4,7 +4,6 @@ body {
 	font-family: Graphik;
 	font-size: 14pt;
 	margin: 20;
-
 }
 
 h1{
@@ -26,8 +25,10 @@ h3{
 
 a{
 	color: hotpink;
+}
 
-
+a:hover {
+	color: white;
 }
 
 p{
@@ -49,6 +50,15 @@ button {
 }
 
 img {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
+}
+
+
+.completed_page {
+	background: hotpink;
+}
+
+.back {
+	color:white;
 }

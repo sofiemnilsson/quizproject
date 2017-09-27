@@ -3,20 +3,20 @@ from django.shortcuts import render
 quizzes = [
 	{
 		"quiz_number": 1,
-		"name": "Rengöring",
-		"description": "Vad vet du om hudvårdens grundbult?"
+		"name": "K-beauty basics",
+		"description": "Grunderna inom K-beauty."
 	},
 
 	{
 		"quiz_number": 2,
-		"name": "Exfoliering",
-		"description": "Korn, kemisk eller inte alls?"
+		"name": "Hudvård",
+		"description": "Frågor om masker, märken och mists."
 	},
 
 	{
 		"quiz_number": 3,
-		"name": "Återfuktning",
-		"description": "Varför serum när det finns crème? Och andra stora frågor."
+		"name": "Koreansk export",
+		"description": "Vad vet du sydkoreanska influenser?"
 
 	},
 ]
@@ -37,10 +37,10 @@ def quiz(request, quiz_number):
 def question(request, quiz_number, question_number):
 	context = {
 		"question_number": question_number,
-		"question": "Hur ofta bör du gå på ansiktsbehandling?",
-		"answer1": "1 gång om året",
-		"answer2": "1 gång i månaden",
-		"answer3": "1 gång i veckan",
+		"question": "Vad betyder 'gwang'?",
+		"answer1": "Pormask",
+		"answer2": "Yttorrhet",
+		"answer3": "Strålande glow",
 		"quiz": quizzes[quiz_number -1],
 		"quiz_number": quiz_number,
 
