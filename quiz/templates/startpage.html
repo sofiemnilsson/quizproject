@@ -22,11 +22,13 @@
 	<p> Här kan du testa dina kunskaper inom hudvård. Värna om kroppens största organ, det är du värd. Men kom ihåg, skönhet kommer inifrån!<i class="em em-massage"></i><i class="em em-snail"></i> </p>
 	<ul>
 		{% for quiz in quizzes %}
-			<li>{{ quiz.name }}</li>
+			<li><a href="http://127.0.0.1:8000/quiz/1/">{{ quiz.name }}</a></li>
 		{% endfor %}
-		<li><a href="quiz.html">Rengöring</a></li>
+
+		
+		<!-- <li><a href="quiz.html">Rengöring</a></li>
 		<li><a href="quiz.html">Exfoliering</a></li>
-		<li><a href="quiz.html">Återfuktning</a></li>
+		<li><a href="quiz.html">Återfuktning</a></li> -->
 		
 	</ul>
 	<br>
