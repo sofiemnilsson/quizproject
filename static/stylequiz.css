@@ -37,7 +37,8 @@ p{
 
 label{
 	font-weight: normal;
-	padding-left: 10px;
+	padding-left: 50px;
+	padding-top: 10px;
 }
 
 button {
@@ -46,6 +47,9 @@ button {
 	padding: 15px 32px;
 	text-align: center;
 	font-size: 24pt;
+	box-shadow: none;
+	outline: 0;
+	border: 0;
 
 }
 
@@ -62,3 +66,90 @@ img {
 .completed_page a {
 	color:white;
 }
+
+.completed_page h2 {
+	color: white
+}
+
+
+
+*{font-family: 'Graphik', sans-serif;}
+
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+.option {
+	position: relative;
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  transition: all 0.15s ease-out 0s;
+  background: white;
+  border: none;
+  cursor: pointer;
+  color: white;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: white;
+}
+
+.option-input:focus {
+outline: none !important;
+}
+
+.option-input:checked {
+  background: hotpink;
+}
+.option-input:checked::before {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  content: '☆';
+  display: inline-block;
+  font-size: 26.66667px;
+  text-align: center;
+  line-height: 40px;
+}
+.option-input:checked::after {
+  background: hotpink;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+/*.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+*/
+
