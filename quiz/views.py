@@ -1,26 +1,6 @@
 from quiz.models import Quiz
 from django.shortcuts import render
 
-# quizzes = [
-# 	{
-# 		"quiz_number": 1,
-# 		"name": "K-beauty basics",
-# 		"description": "Grunderna inom K-beauty."
-# 	},
-
-# 	{
-# 		"quiz_number": 2,
-# 		"name": "Hudvård",
-# 		"description": "Frågor om masker, märken och mists."
-# 	},
-
-# 	{
-# 		"quiz_number": 3,
-# 		"name": "Koreansk export",
-# 		"description": "Vad vet du sydkoreanska influenser?"
-
-# 	},
-# ]
 
 def startpage(request):
 	context = {
@@ -30,7 +10,7 @@ def startpage(request):
 
 def quiz(request, quiz_number):
 	context = {
-		"quiz": quizzes[quiz_number - 1],
+		"quiz": Quiz.objects.get(quiz_number=quiz_number),
 		"quiz_number":quiz_number,
 	}
 	return render(request, "quiz.html", context)
