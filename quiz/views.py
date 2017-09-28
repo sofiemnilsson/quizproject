@@ -1,3 +1,4 @@
+from django.shortcuts import redirect
 from quiz.models import Quiz
 from django.shortcuts import render
 
@@ -39,4 +40,9 @@ def completed(request, quiz_number):
 	}
 	return render(request, "completed.html", context)
 
-
+def answer(request, quiz_number, question_number):
+	answer = request.POST["answer"]
+	saved_answers = request.session.get(str(quiz_number), {})
+	saved_answers[question_number] = int(answer)
+	request.session[quiz_number] = saved_answers
+	return redirect("question_page", quiz_number, question_number + 1)

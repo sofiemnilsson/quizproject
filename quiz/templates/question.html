@@ -11,18 +11,19 @@
 <body>
 	<h1>{{ quiz.name }}</h1>
 	<h2>{{ question_number }}. {{ question }}</h2>
-	<form>
-		<input type="radio" name="q1" value="Alt 1" id="q1alt1">
-			<label for="q1alt1"> {{ answer1 }} </label>
+	<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
+		{% csrf_token %}
+		<input type="radio" name="answer" value="1" id ="ans1" checked>
+			<label for="ans1"> {{ answer1 }} </label>
 		<br>
-		<input type="radio" name="q1" value="Alt 2" id="q1alt2">
-			<label for="q1alt2"> {{ answer2 }} </label>
+		<input type="radio" name="answer" value="2" id="ans2">
+			<label for="ans2"> {{ answer2 }} </label>
 		<br>
-		<input type="radio" name="q1" value="Alt 3" id="q1alt3">
-			<label for="q1alt3"> {{ answer3 }} </label>
+		<input type="radio" name="answer" value="3" id="ans3">
+			<label for="ans3"> {{ answer3 }} </label>
 		<br>
 		<br>
 		
-		<button onclick="location.href='{% url 'completed_page' quiz_number %}'" type="button">Nästa</a>
+		<button type="submit">Nästa</button>
 	</form>
 </body>
