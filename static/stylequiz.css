@@ -107,6 +107,7 @@ img {
 
 .option-input {
   -webkit-appearance: none;
+  -webkit-border-radius:0;
   -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
