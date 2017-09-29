@@ -29,6 +29,11 @@ h3{
 	font-size: 20pt;
 }
 
+ul {
+  font-size: 5vw;
+  color: hotpink;
+}
+
 a{
 	color: hotpink;
 }
