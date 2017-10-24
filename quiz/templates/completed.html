@@ -11,10 +11,22 @@
 </head>
 
 
- 
+
+
 <body class="completed_page">
-		<h1>GWANG WHAT A GLOW!</h1>
-		<h2>Du fick {{ correct }} av {{ total }}.</h2>
+	{% if correct == total %}
+ 		<h1>GWANG WHAT A GLOW!</h1>
+ 	
+ 	{% elif total <= correct < 0 %}
+ 		<h1>AJ DÅ, LÄGG EN TILL MASK!</h1>
+ 	
+ 	{% else %} 
+ 		<h1>NEJ, NU FÅR DU PEELA BÄTTRE!</h1>	
+
+ 	{% endif %}
+	
+	
+	<h2>Du fick {{ correct }} av {{ total }}.</h2>
 
 	<br>
 		<img src="https://media.giphy.com/media/l0EtOmEFNwyGQ6ki4/giphy.gif"/>
