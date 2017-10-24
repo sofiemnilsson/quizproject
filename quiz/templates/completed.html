@@ -17,11 +17,11 @@
 	{% if correct == total %}
  		<h1>GWANG WHAT A GLOW!</h1>
  	
- 	{% elif total <= correct < 0 %}
- 		<h1>AJ DÅ, LÄGG EN TILL MASK!</h1>
+ 	{% elif correct == 0 %}
+ 		<h1>NEJ, NU FÅR DU PEELA BÄTTRE!</h1>
  	
  	{% else %} 
- 		<h1>NEJ, NU FÅR DU PEELA BÄTTRE!</h1>	
+ 		<h1>AJ DÅ, LÄGG EN TILL MASK!</h1>	
 
  	{% endif %}
 	
